@@ -11,9 +11,9 @@ def display_result(result, wallet):
     method_name, method_time = result[1]
     nb_shares = len(shares_selected)
 
-    selected_string = " a été sélectionné"
+    selected_string = " a été sélectionnée"
     if nb_shares > 1:
-        selected_string = "s ont été sélectionné"
+        selected_string = "s ont été sélectionnées"
     msg = f"{nb_shares} action{selected_string} pour un montant de {str('{:.2f}'.format(result_price)):>6s}€"
 
     seconde = ""
